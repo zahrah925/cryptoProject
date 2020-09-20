@@ -1,0 +1,14 @@
+[Unit]
+Description=decrypted service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/home/zahrah/cryptoProject/check_decrypt.sh
+
+[Install]
+WantedBy=multi-user.target
+
